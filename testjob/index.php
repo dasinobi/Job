@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="https://resources/demos/style.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  	 <script>	src="script.js"</script>
+
+	
+
 	<title>Калькулятор</title>
 </head>
 <body>
@@ -50,7 +59,7 @@
 			<form class="wrapper" method="post">
 				<div class="main_inner">
 					<label for="date">Дата оформления вклада</label>
-					<input class="input" type="date" id="date"></input>
+					<input class="input" type="text" id="datepicker"></input>
 				</div>
 
 				<div class="main_inner">
@@ -101,5 +110,16 @@
 				<a class="footer_link" href="#">Интернет-банк</a>
 	</footer>
 
+
+ <script type="text/javascript">
+ 	$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+ </script>
+
+  
+
 </body>
 </html>
+
